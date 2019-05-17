@@ -1,0 +1,38 @@
+{
+  "name": "jackett-dark",
+  "title": "Jackett Dark",
+  "version": "0.0.1-beta",
+  "description": "A darker theme for Jackett",
+  "license": "CC-BY-SA-4.0",
+  "repository": "StylusThemes/Jackett-Dark",
+  "homepage": "https://github.com/StylusThemes/Jackett-Dark",
+  "main": "style.user.css",
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "minify": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-silverwind": "^3.0.1",
+    "fs-extra": "^8.0.1",
+    "perfectionist": "^2.4.0",
+    "semver": "^6.0.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.0.3"
+  },
+  "scripts": {
+    "authors": "bash tools/authors",
+    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
+    "eslint": "eslint --quiet --color tools/*.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "major": "node tools/bump-version.js major && git add . && npm version -f major",
+    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
+    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
+    "perfectionist": "perfectionist style.user.css style.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "stylelint --silent --color -- style.user.css",
+    "test": "npm run eslint && npm run stylelint",
+    "update": "updates -cu && npm install",
+    "usercss": "node tools/update-usercss.js"
+  }
+}
