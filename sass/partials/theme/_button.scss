@@ -1,0 +1,19 @@
+// BUTTONS
+.btn-default,
+input[type=submit] {
+  border-color: $grey3 !important;
+  background-color: $grey3 !important;
+
+  &:hover {
+    border-color: $grey4 !important;
+    background-color: $grey4 !important;
+  }
+}
+
+.close {
+  opacity: .8 !important;
+
+  &:hover {
+    opacity: .4 !important;
+  }
+}

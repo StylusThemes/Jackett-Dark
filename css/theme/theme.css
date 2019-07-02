@@ -1,11 +1,8 @@
-@-moz-document regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
-/* --- VERSION --- */
 #footer:after {
   white-space: pre !important;
   content: "\A Jackett Dark - Version 0.0.1-beta" !important;
 }
 
-/* --- BACKGROUNDS --- */
 html {
   background-color: #1a1a1a !important;
 }
@@ -19,17 +16,15 @@ body {
   background-color: #1f1f1f !important;
 }
 
-/* --- LOGO --- */
 #logo {
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* --- TEXTS --- */
 * {
   color: #fff !important;
 }
 
-/* --- TABLE --- */
 table thead th {
   border-color: #303030 !important;
 }
@@ -54,14 +49,8 @@ table tfoot td {
   border-color: #303030 !important;
 }
 
-/* --- FORMS --- */
 .form-control {
   border-color: #303030 !important;
-  background-color: #303030 !important;
-}
-
-.form-control[readonly] {
-  border-color: #fff !important;
   background-color: #303030 !important;
 }
 
@@ -70,33 +59,38 @@ table tfoot td {
   box-shadow: none !important;
 }
 
+.form-control[readonly] {
+  border-color: #fff !important;
+  background-color: #303030 !important;
+}
+
 #configured-indexer-datatable_length select,
-#unconfigured-indexer-datatable_length select,
+#jackett-releases-datatable_length select,
 #jackett-search-results-datatable_length select,
-#jackett-releases-datatable_length select {
+#unconfigured-indexer-datatable_length select {
   border: solid 1px #303030 !important;
   background-color: #303030 !important;
 }
 
 #configured-indexer-datatable_length select:focus,
-#unconfigured-indexer-datatable_length select:focus,
+#jackett-releases-datatable_length select:focus,
 #jackett-search-results-datatable_length select:focus,
-#jackett-releases-datatable_length select:focus {
+#unconfigured-indexer-datatable_length select:focus {
   border-color: #fff !important;
 }
 
 #configured-indexer-datatable_filter input,
-#unconfigured-indexer-datatable_filter input,
+#jackett-releases-datatable_filter input,
 #jackett-search-results-datatable_filter input,
-#jackett-releases-datatable_filter input {
+#unconfigured-indexer-datatable_filter input {
   border: solid 1px #303030 !important;
   background-color: #303030 !important;
 }
 
 #configured-indexer-datatable_filter input:focus,
-#unconfigured-indexer-datatable_filter input:focus,
+#jackett-releases-datatable_filter input:focus,
 #jackett-search-results-datatable_filter input:focus,
-#jackett-releases-datatable_filter input:focus {
+#unconfigured-indexer-datatable_filter input:focus {
   border-color: #fff !important;
 }
 
@@ -109,27 +103,17 @@ table tfoot td {
   border-color: #fff !important;
 }
 
-/* --- MODALS --- */
 .modal-content {
   background-color: #1f1f1f !important;
 }
 
-/* --- BUTTONS --- */
-.btn-default {
-  border-color: #303030 !important;
-  background-color: #303030 !important;
-}
-
-.btn-default:hover {
-  border-color: #2b2b2b !important;
-  background-color: #2b2b2b !important;
-}
-
+.btn-default,
 input[type=submit] {
   border-color: #303030 !important;
   background-color: #303030 !important;
 }
 
+.btn-default:hover,
 input[type=submit]:hover {
   border-color: #2b2b2b !important;
   background-color: #2b2b2b !important;
@@ -143,10 +127,8 @@ input[type=submit]:hover {
   opacity: .4 !important;
 }
 
-/* --- INFO --- */
 .alert-info,
 .alert-success {
   border-color: #303030 !important;
   background-color: #303030 !important;
-}
 }

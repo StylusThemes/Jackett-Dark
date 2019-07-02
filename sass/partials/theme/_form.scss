@@ -1,0 +1,52 @@
+// FORMS
+.form-control {
+  border-color: $grey3 !important;
+  background-color: $grey3 !important;
+
+  &:focus {
+    border-color: $white !important;
+    box-shadow: none !important;
+  }
+}
+
+.form-control[readonly] {
+  border-color: $white !important;
+  background-color: $grey3 !important;
+}
+
+#configured-indexer-datatable_length,
+#jackett-releases-datatable_length,
+#jackett-search-results-datatable_length,
+#unconfigured-indexer-datatable_length {
+  select {
+    border: solid 1px $grey3 !important;
+    background-color: $grey3 !important;
+
+    &:focus {
+      border-color: $white !important;
+    }
+  }
+}
+
+#configured-indexer-datatable_filter,
+#jackett-releases-datatable_filter,
+#jackett-search-results-datatable_filter,
+#unconfigured-indexer-datatable_filter {
+  input {
+    border: solid 1px $grey3 !important;
+    background-color: $grey3 !important;
+
+    &:focus {
+      border-color: $white !important;
+    }
+  }
+}
+
+#searchquery {
+  border: solid 1px $grey3 !important;
+  background-color: $grey3 !important;
+
+  &:focus {
+    border-color: $white !important;
+  }
+}

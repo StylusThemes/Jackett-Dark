@@ -1,0 +1,6 @@
+#footer {
+  &:after {
+    white-space: pre !important;
+    content: "\A Jackett Dark - Version 0.0.1-beta" !important;
+  }
+}

@@ -25,9 +25,8 @@
 
 If you would like to contribute to this repository, please...
 
-1. 👓 Read the [contribution guidelines][contributing].
 1. ![repo-forked][9] [Fork][10] or ![cloud-download][11] [download][12] this repository.
-1. 👌 Create a pull request!
+2. 👌 Create a pull request!
 
 <!-- BADGES -->
 [version]: https://flat.badgen.net/github/release/StylusThemes/Jackett-Dark
@@ -56,7 +55,6 @@ If you would like to contribute to this repository, please...
 [Screenshots]: README.md#screenshots
 
 <!-- CONTRIBUTIONS -->
-[contributing]: ./.github/CONTRIBUTING.md
 [9]: https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png
 [10]: https://github.com/StylusThemes/Jackett-Dark/fork
 [11]: https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png

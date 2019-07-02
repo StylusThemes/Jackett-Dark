@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name         Jackett Dark
+@version      0.0.1-beta
+@description  A darker theme for Jackett
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/Jackett-Dark
+@supportURL   https://github.com/StylusThemes/Jackett-Dark/issues/
+@updateURL    https://raw.githubusercontent.com/StylusThemes/Jackett-Dark/master/style.user.css
+@license      CC-BY-SA-4.0
+
+@advanced text PORT "Port Number" "9117"
+@advanced text URL "Custom URL" "http://example.com/"
+==/UserStyle== */
+@-moz-document regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
+{{theme}}
+}

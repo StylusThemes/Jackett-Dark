@@ -1,0 +1,32 @@
+// TABLES
+table {
+  thead {
+    th {
+      border-color: $grey3 !important;
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: $grey2 !important;
+
+      &:hover {
+        background-color: $grey3 !important;
+
+        td {
+          border-color: transparent !important;
+        }
+      }
+
+      td {
+        border-color: $grey3 !important;
+      }
+    }
+  }
+
+  tfoot {
+    td {
+      border-color: $grey3 !important;
+    }
+  }
+}
